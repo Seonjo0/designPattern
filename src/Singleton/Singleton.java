@@ -16,7 +16,7 @@ public class Singleton {
 //        return singletonInstance;
 //    }
 
-    private static Singleton singletonInstance;
+    private volatile static Singleton singletonInstance;
 
     public static Singleton getSingletonInstance() {
         if (singletonInstance == null) {
